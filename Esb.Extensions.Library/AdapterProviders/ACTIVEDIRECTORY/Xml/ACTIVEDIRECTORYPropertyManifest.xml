@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<adapterPropertyManifest adapterName="ACTIVEADAPTER">
+	<aliases>
+		<alias name="activeAdapterPropertySchemas" value="ESB.Extensions.Library.Schemas.psActiveDirectory, ESB.Extensions.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f5f6c2d4ce791c4c" />
+	</aliases>
+	<properties>
+    <!-- 
+    private static int batchSize = 50;
+    private static PropertyBase isSolicitResponseProp = (PropertyBase) new IsSolicitResponse();
+    private bool isTwoWay;
+    private string uri;
+    private string name;
+    -->
+		<property name="BatchSize" type="ESB.Extensions.Library.Schemas.BatchSizeType" assembly="activeAdapterPropertySchemas" />
+		<property name="IsSolicitResponseProp" type="ESB.Extensions.Library.Schemas.IsSolicitResponseType" assembly="activeAdapterPropertySchemas" />
+    <property name="IsTwoWay" type="ESB.Extensions.Library.Schemas.IsTwoWayType" assembly="activeAdapterPropertySchemas" />
+    <property name="Uri" type="ESB.Extensions.Library.Schemas.UriType" assembly="activeAdapterPropertySchemas" />
+    <property name="Name" type="ESB.Extensions.Library.Schemas.NameType" assembly="activeAdapterPropertySchemas" />
+	</properties>	
+</adapterPropertyManifest>

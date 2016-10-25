@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<adapterPropertyManifest adapterName="WSS">
+	<aliases>
+		<alias name="globalPropertySchemas" value="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+	</aliases>
+	<properties>
+		<property name="ConfigAdapterWSPort" type="WSS.ConfigAdapterWSPort" assembly="globalPropertySchemas" />
+		<property name="ConfigCustomTemplatesDocLib" type="WSS.ConfigCustomTemplatesDocLib" assembly="globalPropertySchemas" />
+		<property name="ConfigCustomTemplatesNamespaceCol" type="WSS.ConfigCustomTemplatesNamespaceCol" assembly="globalPropertySchemas" />
+		<property name="ConfigNamespaceAliases" type="WSS.ConfigNamespaceAliases" assembly="globalPropertySchemas" />
+		<property name="ConfigOfficeIntegration" type="WSS.ConfigOfficeIntegration" assembly="globalPropertySchemas" />
+		<property name="ConfigOverwrite" type="WSS.ConfigOverwrite" assembly="globalPropertySchemas" />
+		<property name="ConfigPropertiesXml" type="WSS.ConfigPropertiesXml" assembly="globalPropertySchemas" />
+    <property name="ConfigSharePointOnlinePassword" type="WSS.ConfigSharePointOnlinePassword" assembly="globalPropertySchemas" />
+    <property name="ConfigSharePointOnlineUsername" type="WSS.ConfigSharePointOnlineUsername" assembly="globalPropertySchemas" />
+		<property name="ConfigTemplatesDocLib" type="WSS.ConfigTemplatesDocLib" assembly="globalPropertySchemas" />
+		<property name="ConfigTemplatesNamespaceCol" type="WSS.ConfigTemplatesDocLib" assembly="globalPropertySchemas" />
+		<property name="ConfigTimeout" type="WSS.ConfigTimeout" assembly="globalPropertySchemas" />
+    <property name="ConfigUseClientOM" type="WSS.ConfigUseClientOM" assembly="globalPropertySchemas" />
+		<property name="Filename" type="WSS.Filename" assembly="globalPropertySchemas" />
+		<property name="InArchivedMsgUrl" type="WSS.InArchivedMsgUrl" assembly="globalPropertySchemas" />
+		<property name="InCreated" type="WSS.InCreated" assembly="globalPropertySchemas" />
+		<property name="InCreatedBy" type="WSS.InCreatedBy" assembly="globalPropertySchemas" />
+		<property name="InEditUrl" type="WSS.InEditUrl" assembly="globalPropertySchemas" />
+		<property name="InFileSize" type="WSS.InFileSize" assembly="globalPropertySchemas" />
+		<property name="InIconUrl" type="WSS.InIconUrl" assembly="globalPropertySchemas" />
+		<property name="InItemId" type="WSS.InItemId" assembly="globalPropertySchemas" />
+		<property name="InLastModified" type="WSS.InLastModified" assembly="globalPropertySchemas" />
+		<property name="InListName" type="WSS.InListName" assembly="globalPropertySchemas" />
+		<property name="InListUrl" type="WSS.InListUrl" assembly="globalPropertySchemas" />
+		<property name="InOfficeIntegration" type="WSS.InOfficeIntegration" assembly="globalPropertySchemas" />
+		<property name="InPropertiesXml" type="WSS.InPropertiesXml" assembly="globalPropertySchemas" />
+		<property name="InTitle" type="WSS.InTitle" assembly="globalPropertySchemas" />
+		<property name="Url" type="WSS.Url" assembly="globalPropertySchemas" />
+	</properties>
+	
+</adapterPropertyManifest>

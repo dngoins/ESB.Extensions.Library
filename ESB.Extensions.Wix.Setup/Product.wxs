@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="ESB.Extensions.Library.Setup" Language="1033" Version="1.0.0.0" Manufacturer="JM Family Enterprises" UpgradeCode="46568781-5d0f-47ee-9f32-6226aca9c151">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="ESB.Extensions.Library.Setup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+    <Binary Id="Esb.Extensions.Library.CustomActionDLL" SourceFile="$(var.ESB.Extensions.Library.CustomAction.TargetDir)Esb.Extensions.Library.CustomAction.CA.dll" />
+    
+    <CustomAction Id="CA_EsbExtensionsLibraryInstall" BinaryKey="Esb.Extensions.Library.CustomActionDLL" DllEntry="Install" Execute="deferred" Return="check" />
+
+    <CustomAction Id="CA_EsbExtensionsLibraryUninstall" BinaryKey="Esb.Extensions.Library.CustomActionDLL" DllEntry="Uninstall" Execute="immediate" Return="check" />
+
+    <!--<Property Id="ESB_EXT_LIB_DIR" Value="[INSTALLFOLDER]" />-->
+
+    <SetProperty Id="CA_EsbExtensionsLibraryInstall" Value="ESB_EXT_LIB_DIR=[INSTALLFOLDER]" Sequence="execute" Before="CA_EsbExtensionsLibraryInstall" />
+    
+    <InstallExecuteSequence>
+      <Custom Action="CA_EsbExtensionsLibraryInstall" After="InstallFiles" >
+        <![CDATA[NOT Installed]]>
+      </Custom>
+     <Custom Action="CA_EsbExtensionsLibraryUninstall" After="InstallInitialize" >
+        <![CDATA[REMOVE ~= "ALL"]]>
+      </Custom>
+    </InstallExecuteSequence>
+    
+	</Product>
+
+  
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="ManufacturerFolder" Name="THOTH Speed Engineers">
+          <Directory Id="INSTALLFOLDER" Name="ESB.Extensions.Library" >
+            <Directory Id="ADAPTERPROVIDERFOLDER" Name="AdapterProviders" />
+            <Directory Id="GACFOLDER" Name="GAC" />
+          </Directory>
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" >
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<Component Id="ProductComponent" Guid="6BC58C92-6F5A-4858-8B06-7D8D7D6EFCC5" Directory="INSTALLFOLDER">
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+        <File Id="EsbExtLibDll" Source="$(var.Esb.Extensions.Library.TargetPath)" />
+
+       
+
+        <File Source="$(var.ESB.Extensions.Library.CustomAction.TargetPath)"/>
+			 </Component>
+
+      <Component Id="AdapterProviders" Guid="E9EB3FA1-517F-4A66-A7B7-EFD35AAD2180" Directory="ADAPTERPROVIDERFOLDER">
+        <File Source="$(var.Esb.Extensions.Library.ProjectDir)AdapterProviders\ActiveDirectory\Xml\ActiveDirectoryPropertyManifest.xml"/>
+        <File Source="$(var.Esb.Extensions.Library.ProjectDir)AdapterProviders\HTTP\Xml\HttpPropertyManifest.xml"/>
+        <File Source="$(var.Esb.Extensions.Library.ProjectDir)AdapterProviders\MSMQ\Xml\MSMQPropertyManifest.xml"/>       
+        <File Source="$(var.Esb.Extensions.Library.ProjectDir)AdapterProviders\Sharepoint\Xml\Windows SharePoint ServicesPropertyManifest.xml"/>
+      </Component>
+
+      <Component Id="GACAssemblies" Guid="B7F3C4C8-7221-4A62-BF8E-078EE7FF5B7B" Directory="GACFOLDER" >
+        <File Source="$(var.Esb.Extensions.Library.TargetPath)" Assembly=".net" KeyPath="yes" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

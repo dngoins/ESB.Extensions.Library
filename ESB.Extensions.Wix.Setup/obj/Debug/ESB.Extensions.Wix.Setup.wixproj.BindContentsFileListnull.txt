@@ -1,0 +1,7 @@
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\AdapterProviders\ActiveDirectory\Xml\ActiveDirectoryPropertyManifest.xml
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Library.CustomAction\bin\Debug\ESB.Extensions.Library.CustomAction.dll
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\bin\Debug\ESB.Extensions.Library.dll
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\bin\Debug\ESB.Extensions.Library.dll
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\AdapterProviders\HTTP\Xml\HttpPropertyManifest.xml
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\AdapterProviders\MSMQ\Xml\MSMQPropertyManifest.xml
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\Esb.Extensions.Library\AdapterProviders\Sharepoint\Xml\Windows SharePoint ServicesPropertyManifest.xml

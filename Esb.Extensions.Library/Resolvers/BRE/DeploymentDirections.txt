@@ -1,0 +1,60 @@
+﻿1) Verify project builds.
+2) Gac this assembly
+3) Copy dll into %ESB 2.3 Install Directory%\Itinerary DSL\Lib
+3) Modify the ESB.Config file by adding the following lines:
+	In the <resolvers> section add:
+	<resolver name="BRE.EXT" type="Microsoft.Practices.ESB.Resolver.Unity.ResolveProvider, Microsoft.Practices.ESB.Resolver.Unity, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" >
+		<resolverConfig>
+			<add name="unitySectionName" value="esb.resolver" />
+			<add name="unityContainerName" value="BRE.EXT" />
+		</resolverConfig>
+    </resolver>	
+      
+    In the <esb.resolver> section add:
+    <alias alias="BRE_ResolverProvider" type="ESB.Extensions.Library.Resolvers.Bre.BRE_ResolverProvider, ESB.Extensions.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aeb660468fddc5d9" />
+  
+    In the <esb.resolver> section add:
+	   <container name="BRE.EXT">
+			<register type="IResolveProvider" mapTo="BRE_ResolverProvider"/>
+		  <register type="IFactProvider" mapTo="ItineraryFactProvider" name="ItineraryFactProvider">
+			<lifetime type="singleton"/>
+		  </register>
+		  <register type="IRepositoryProvider" mapTo="SqlRepositoryProvider" name="CurrentRepositoryProvider">
+			<lifetime type="singleton"/>
+			<constructor>
+			<param name="connectionStringName">
+			  <value value="ItineraryDb"/>
+			</param>
+			<param name="cacheManagerName">
+			  <value value="Itinerary Cache Manager"/>
+			</param>
+			<param name="cacheTimeout">
+			  <value value="120"/>
+			</param>
+		  </constructor>
+		  </register>
+		  <register type="IFactTranslator" mapTo="DefaultFactTranslator" name="DefaultFactTranslator">
+			<lifetime type="singleton"/>
+		  </register>
+		  <register type="IFactTranslator" mapTo="ItineraryFactTranslator" name="ItineraryFactTranslator">
+			<lifetime type="singleton"/>
+			<constructor>
+				<param name="repositoryProvider">
+				  <dependency name="CurrentRepositoryProvider"/>
+				</param>
+			  </constructor>
+		  </register>
+		</container>    
+  
+Usage:
+1) Create a Policy inside the BRE Composer
+2) Create a new rule
+3) Use the MessageContextFactRetriever class from the .Net Assemebly to read context values for rule condition evaluation
+4) See included rules for usage.
+5) For Setting the ItinerarySelector to use the resolver:
+	BRE.EXT:\\policy=PolicyName;version=1.0;useMsg=true;recognizeMessageFormat=true;useMsgCtxt=true;msgCtxtValues=ns#property|ns2#property|ns3#property
+		or
+	(To pass in all promoted properties leave msgCtxtValues property blank)
+	BRE.EXT:\\policy=PolicyName;version=1.0;useMsg=true;recognizeMessageFormat=true;useMsgCtxt=true;msgCtxtValues;
+	
+	

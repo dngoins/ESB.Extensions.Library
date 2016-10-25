@@ -1,0 +1,3 @@
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\cab1.cab
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\ESB.Extensions.Library.Setup.msi
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\ESB.Extensions.Library.Setup.wixpdb

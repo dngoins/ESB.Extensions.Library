@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<adapterPropertyManifest adapterName="HTTP">
+	<aliases>
+		<alias name="globalPropertySchemas" value="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+	</aliases>
+	<properties>
+		<property name="AffiliateApplicationName" type="HTTP.AffiliateApplicationName" assembly="globalPropertySchemas" />
+		<property name="AuthenticationScheme" type="HTTP.AuthenticationScheme" assembly="globalPropertySchemas" />
+		<property name="Certificate" type="HTTP.Certificate" assembly="globalPropertySchemas" />
+		<property name="ContentType" type="HTTP.ContentType" assembly="globalPropertySchemas" />
+		<property name="EnableChunkedEncoding" type="HTTP.EnableChunkedEncoding" assembly="globalPropertySchemas" />
+		<property name="HttpCookie" type="HTTP.HttpCookie" assembly="globalPropertySchemas" />
+		<property name="InboundHttpHeaders" type="HTTP.InboundHttpHeaders" assembly="globalPropertySchemas" />
+		<property name="MaxRedirects" type="HTTP.MaxRedirects" assembly="globalPropertySchemas" />
+		<property name="Password" type="HTTP.Password" assembly="globalPropertySchemas" />
+		<property name="ProxyName" type="HTTP.ProxyName" assembly="globalPropertySchemas" />
+		<property name="ProxyPassword" type="HTTP.ProxyPassword" assembly="globalPropertySchemas" />
+		<property name="ProxyPort" type="HTTP.ProxyPort" assembly="globalPropertySchemas" />
+		<property name="ProxyUsername" type="HTTP.ProxyUsername" assembly="globalPropertySchemas" />
+		<property name="RequestTimeout" type="HTTP.RequestTimeout" assembly="globalPropertySchemas" />
+		<property name="ResponseStatusCode" type="HTTP.ResponseStatusCode" assembly="globalPropertySchemas" />
+		<property name="SubmissionHandle" type="HTTP.SubmissionHandle" assembly="globalPropertySchemas" />
+		<property name="UseHandlerProxySettings" type="HTTP.UseHandlerProxySettings" assembly="globalPropertySchemas" />
+		<property name="UseProxy" type="HTTP.UseProxy" assembly="globalPropertySchemas" />
+		<property name="Username" type="HTTP.Username" assembly="globalPropertySchemas" />
+		<property name="UseSSO" type="HTTP.UseSSO" assembly="globalPropertySchemas" />		
+	</properties>
+
+</adapterPropertyManifest>

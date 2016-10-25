@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<adapterPropertyManifest adapterName="MSMQ">
+	<aliases>
+		<alias name="msmqPropertySchemas" value="Microsoft.BizTalk.Adapter.MSMQ.MsmqAdapterProperties, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+	</aliases>
+	<properties>
+		<property name="AcknowledgeType" type="MSMQ.AcknowledgeType" assembly="msmqPropertySchemas" />
+		<property name="AdministrationQueue" type="MSMQ.AdministrationQueue" assembly="msmqPropertySchemas" />
+		<property name="AppSpecific" type="MSMQ.AppSpecific" assembly="msmqPropertySchemas" />
+		<property name="ArrivedTime" type="MSMQ.ArrivedTime" assembly="msmqPropertySchemas" />
+		<property name="Authenticated" type="MSMQ.Authenticated" assembly="msmqPropertySchemas" />
+		<property name="BodyType" type="MSMQ.BodyType" assembly="msmqPropertySchemas" />
+		<property name="CertificateThumbPrint" type="MSMQ.CertificateThumbPrint" assembly="msmqPropertySchemas" />
+		<property name="CorrelationId" type="MSMQ.CorrelationId" assembly="msmqPropertySchemas" />
+		<property name="EncryptionAlgorithm" type="MSMQ.EncryptionAlgorithm" assembly="msmqPropertySchemas" />
+		<property name="Id" type="MSMQ.Id" assembly="msmqPropertySchemas" />
+		<property name="Label" type="MSMQ.Label" assembly="msmqPropertySchemas" />
+		<property name="MaximumMessageSize" type="MSMQ.MaximumMessageSize" assembly="msmqPropertySchemas" />
+		<property name="MessageType" type="MSMQ.MessageType" assembly="msmqPropertySchemas" />
+		<property name="Priority" type="MSMQ.Priority" assembly="msmqPropertySchemas" />
+		<property name="Recoverable" type="MSMQ.Recoverable" assembly="msmqPropertySchemas" />
+		<property name="ResponseQueue" type="MSMQ.ResponseQueue" assembly="msmqPropertySchemas" />
+		<property name="SegmentationSupport" type="MSMQ.SegmentationSupport" assembly="msmqPropertySchemas" />
+		<property name="SentTime" type="MSMQ.SentTime" assembly="msmqPropertySchemas" />
+		<property name="SourceMachine" type="MSMQ.SourceMachine" assembly="msmqPropertySchemas" />
+		<property name="TimeOut" type="MSMQ.TimeOut" assembly="msmqPropertySchemas" />
+		<property name="TimeOutUnits" type="MSMQ.TimeOutUnits" assembly="msmqPropertySchemas" />
+		<property name="Transactional" type="MSMQ.Transactional" assembly="msmqPropertySchemas" />
+		<property name="UseAuthentication" type="MSMQ.UseAuthentication" assembly="msmqPropertySchemas" />
+		<property name="UseDeadLetterQueue" type="MSMQ.UseDeadLetterQueue" assembly="msmqPropertySchemas" />
+		<property name="UseJournalQueue" type="MSMQ.UseJournalQueue" assembly="msmqPropertySchemas" />
+	</properties>	
+</adapterPropertyManifest>

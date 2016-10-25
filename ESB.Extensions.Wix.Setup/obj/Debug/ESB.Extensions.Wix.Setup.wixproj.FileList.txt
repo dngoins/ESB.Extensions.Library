@@ -1,0 +1,10 @@
+\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\ESB.Extensions.Wix.Setup\bin\Debug\cab1.cab
+\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\ESB.Extensions.Wix.Setup\bin\Debug\JMFE.ESB.Extensions.Library.Setup.msi
+\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\ESB.Extensions.Wix.Setup\bin\Debug\JMFE.ESB.Extensions.Library.Setup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ESB.Extensions.Wix.Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\ESB.Extensions.Wix.Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ESB.Extensions.Wix.Setup.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\cab1.cab
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\ESB.Extensions.Library.Setup.msi
+C:\Users\conxqyk\Source\Repos\ESB.Extensions.Library\ESB.Extensions.Wix.Setup\bin\Debug\ESB.Extensions.Library.Setup.wixpdb
