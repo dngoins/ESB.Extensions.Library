@@ -1,4 +1,0 @@
-\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\Library.Setup\bin\Debug\JMFE.ESB.Extensions.Library.Setup.dll
-\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\Library.Setup\bin\Debug\JMFE.ESB.Extensions.Library.Setup.pdb
-\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\Library.Setup\obj\Debug\JMFE.ESB.Extensions.Library.Setup.dll
-\\alpsfilp8\ALPUsers$\conxqyk\Downloads\EsbExtLibrary\esbextlibrary_b5e81dcf3325\ESB.Extensions\Library.Setup\obj\Debug\JMFE.ESB.Extensions.Library.Setup.pdb
